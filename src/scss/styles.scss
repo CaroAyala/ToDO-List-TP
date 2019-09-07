@@ -1,0 +1,114 @@
+// --> HEADER <--
+
+.header-container {
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 76, 0.488), rgba(191, 0, 255, 0.523));
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 15px;
+}
+.header-container-greeting {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.greeting-name {
+    margin: 0px;
+}
+.add-button {
+    padding: 0px;
+}
+.fa-plus-square {
+    font-size: 45px;
+    color: white;
+}
+.greeting-text {
+    font-size: 11pt;
+}
+.new-card {
+    justify-content: space-between;
+    margin-top: 0;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    transition: all 0.5s;
+    cursor: pointer;
+    &.mostrar {
+        margin-top: 15px;
+        height: 30px;
+        opacity: 1;
+    }
+}
+.new-card-input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.new-card-add {
+    background-color: plum;
+    border: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    font-size: 11pt;
+    color: white;
+    font-weight: bolder;
+}
+
+// --> TASKS <--
+
+.tasks-container,
+.tasks-completed {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: grey;
+}
+
+// --> TASKS INCOMPLETAS <--
+.fa-paperclip {
+    font-size: 14px;
+    margin-right: 5px;
+}
+.task-incompleted {
+    background-image: linear-gradient(to bottom right, rgba(83, 17, 213, 0.488), rgba(65, 245, 233, 0.577));
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.task-incompleted-text {
+    margin-left: 6px;
+    color: white;
+    font-size: 15px;
+}
+.fa-check-circle {
+    font-size: 15px;
+    color: white;
+    margin-left: 100px;
+}
+.fa-trash-alt {
+    font-size: 15px;
+    color: white;
+}
+
+// --> TASKS COMPLETAS <--
+.task-completed {
+    background-color: rgb(205, 203, 203);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.task-completed-text {
+    margin-left: 6px;
+    color: rgb(181, 179, 179);
+    font-size: 15px;
+}

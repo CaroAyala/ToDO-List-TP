@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/styles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+            crossorigin="anonymous"
+        />
+        <title>Tareas</title>
+    </head>
+
+    <body>
+        <!-- barra -->
+        <header class="header-greeting">
+            <div class="header-container">
+                <h1 class="greeting-name">Hola Carolis!</h1>
+                <div class="header-container-greeting">
+                    <p class="greeting-text">
+                        Sistema de gestión de tareas
+                    </p>
+                    <button class="add-button" id="addButton">
+                        <i class="far fa-plus-square"></i>
+                    </button>
+                </div>
+                <div class="new-card" id="addContainer">
+                    <input type="text" placeholder="Nueva tarea..." class="new-card-input" id="title" />
+                    <button class="new-card-add" type="button" id="newCardAdd">+</button>
+                </div>
+            </div>
+        </header>
+        <!-- tareas -->
+        <div class="tasks-container" id="pendientes">
+            <p class="tasks-container-text">= Pendientes</p>
+        </div>
+        <!-- pendientes -->
+
+        <div class="tasks-completed" id="completadas">
+            <p class="tasks-container-text">= Realizadas</p>
+            <!-- completadas -->
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
